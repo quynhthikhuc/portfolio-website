@@ -1,0 +1,138 @@
+#fname{
+    background-color: var(--blue);
+    line-height: 5.5rem;
+}
+
+#intro-ui-ux-highlight{
+    background-color: var(--purple);
+}
+
+#intro-web-dev-highlight{
+    background-color: var(--pink);
+}
+
+.intro-highlight{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+}
+
+#my-work h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#project-filter-button-wrapper{
+    display: grid;
+    grid-template-columns: 11rem 0.8rem 8rem;
+    justify-items: start;
+    margin-bottom: 1.4rem;
+    margin-top: 0.2rem;
+    width: 80%;
+}
+
+#project-filter-button-wrapper button{
+    background-color: black;
+    border: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    justify-self: start;
+    padding: 0;
+    margin: 0;
+}
+
+#project-filter-button-wrapper div{
+    border-left: 1px solid var(--white);
+    justify-self: start;
+}
+
+.portfolio-projects-link{
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.portfolio-projects-link figure{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio-projects-link div{
+    overflow: hidden;
+    width: 100%;
+}
+
+.portfolio-projects-link img{
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+.portfolio-projects-link:hover img{
+	transform: scale(1.2);
+}
+
+.portfolio-projects figcaption{
+    background-color: var(--black);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+@media(min-width: 500px){
+    .intro-highlight{
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
+
+    #my-work h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width: 768px){
+    .portfolio-projects{
+        max-width: 50vw;
+    }
+
+    .portfolio-projects-wrapper{
+        display: grid;
+        align-items: start;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
+    }
+
+    .portfolio-projects-link{
+        text-decoration: none;
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 900px){
+    #my-work h2{
+        font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 1200px){
+    #home-main{
+        display: grid;
+        grid-template-columns: 32% 2% auto;
+        grid-template-areas:
+            'introduction . portfolio';
+        width: 100%;
+    }
+
+    #introduction{
+        grid-area: introduction;
+    }
+
+    #my-work{
+        grid-area: portfolio;
+    }
+
+    #my-work h2{
+        margin: 0;
+    }
+}

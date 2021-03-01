@@ -1,0 +1,31 @@
+#introduction-title{
+    background-color: var(--purple);
+}
+
+#weaknesses-title{
+    background-color: var(--orange);
+}
+
+#goals-title{
+    background-color: var(--pink);
+}
+
+#limitations-title{
+    background-color: var(--purple-pink);
+}
+
+#card-sort-site-map-title{
+    background-color: var(--orange);
+}
+
+#wireframes-color-typography-title{
+    background-color: var(--purple);
+}
+
+#takeaways-title{
+    background-color: var(--pink);
+}
+
+#final-design-title{
+    background-color: var(--purple-pink);
+}

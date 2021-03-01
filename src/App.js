@@ -11,7 +11,7 @@ import TheOrdinary from './pages/TheOrdinary';
 
 function App() {
   return (
-    <div className="App">
+    <div id="wrapper">
       <Router>
       <Navigation />
         <Switch>

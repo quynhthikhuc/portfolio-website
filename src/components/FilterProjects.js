@@ -19,7 +19,7 @@ function FilterProjects(props){
             isExternal={project.isExternal}
         />)
         return(
-            <div>{projects}</div>
+            <div className="portfolio-projects-wrapper">{projects}</div>
         )
     }
     else{
@@ -37,7 +37,7 @@ function FilterProjects(props){
             isExternal={project.isExternal}
         />)
         return(
-            <div>{projects}</div>
+            <div className="portfolio-projects-wrapper">{projects}</div>
         )
     }
 }

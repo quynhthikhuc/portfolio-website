@@ -1,0 +1,77 @@
+#education-title{
+    background-color: var(--purple);
+}
+
+#skills-title{
+    background-color: var(--orange);
+}
+
+#work-experience-title{
+    background-color: var(--pink);
+}
+
+#projects-title{
+    background-color: var(--purple-pink);
+}
+
+#relevant-coursework-title{
+    background-color: var(--purple);
+}
+
+#resume-main .list-items{
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#resume-main .list-items p{
+    margin-top: 0.4rem;
+}
+
+@media(min-width: 768px){
+    #resume-content{
+        display: grid;
+        align-items: start;
+        grid-template-columns: 49% 49%;
+        grid-template-areas: 
+            'education skills'
+            'work-experience projects'
+            'work-experience relevant-coursework';
+        gap: 2%;
+    }
+
+    #education{
+        grid-area: education;
+    }
+
+    #skills{
+        grid-area: skills;
+    }
+
+    #work-experience{
+        grid-area: work-experience;
+    }
+
+    #projects{
+        grid-area: projects;
+    }
+
+    #relevant-coursework{
+        grid-area: relevant-coursework;
+    }
+
+    #resume-download-link{
+        margin-top: 8rem;
+    }
+}
+
+@media(min-width: 1200px){
+    #resume-content{
+        display: grid;
+        align-items: start;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-areas: 
+            'education work-experience projects'
+            'skills work-experience projects';
+        gap: 2%;
+    }
+}

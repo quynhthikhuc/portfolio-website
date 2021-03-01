@@ -1,0 +1,67 @@
+#contact-main li{
+    margin-top: 0.5rem;
+}
+
+#contact-main form{
+    margin-top: 2rem;
+}
+
+#contact-main form input{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 100%;
+}
+
+#contact-main #message{
+    height: 10rem;
+}
+
+#contact-main #submit-button{
+    background-color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 1.2rem;
+    width: 50%;
+}
+
+#contact-main form input:focus{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(min-width: 768px){
+    #contact-content{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
+    }
+
+    #contact-content form{
+        margin: 1rem;
+    }
+}
+
+@media(min-width: 1200px){
+    #contact-content{
+        display: grid;
+        grid-template-columns: 32% 2% auto;
+        grid-template-areas: 
+            'instruction . form';
+    }
+
+    #contact-content #instruction{
+        grid-area: instruction;
+    }
+
+    #contact-content form{
+        grid-area: form;
+    }
+
+    #contact-main #message{
+        height: 16rem;
+    }
+}

@@ -23,10 +23,10 @@ class Contact extends React.Component{
     render(){
         return(
             <div>
-                <main>
-                    <h1><b>CONTACT</b></h1>
-                    <div>
-                        <div>
+                <main id="contact-main">
+                    <h1><b className="page-title">CONTACT</b></h1>
+                    <div id="contact-content">
+                        <div id="contact-instruction">
                             <p>You can reach out to me by using the contact form, or through any of the following social media platform:</p>
                             <ul>
                                 <li><a href="https://github.com/quinnkhuc" target="_blank" rel="noreferrer">GitHub</a></li>
@@ -45,7 +45,7 @@ class Contact extends React.Component{
                             </div>
                             <div>
                                 <label htmlFor="message">Message:</label>
-                                <input type="text" name="message" id="message" required/>
+                                <input type="text" name="message" id="message" size="100" required/>
                             </div>
                             <input type="submit" value="Submit" id="submit-button"
                             />

@@ -29,17 +29,17 @@ class Home extends React.Component{
     render(){
         return(
             <div>
-                <main>
-                    <div>
-                        <h1>Hi, I'm Quinn</h1>
-                        <p>I'm an Interactive Digital Media major at Drexel University, and an aspiring Web Developer and UI/UX Designer.</p>
+                <main id="home-main">
+                    <div id="introduction">
+                        <h1>Hi, I'm <b id="fname">Quinn</b></h1>
+                        <p>I'm an Interactive Digital Media major at Drexel University, and an aspiring <b id="intro-web-dev-highlight" className="intro-highlight">Web Developer</b> and <b id="intro-ui-ux-highlight" className="intro-highlight">UI/UX Designer.</b></p>
                     </div>
-                    <div>
+                    <div id="my-work">
                         <h2>My work</h2>
-                        <div>
-                            <button onClick={this.webDevClick}>Web Development</button>
-    
-                            <button onClick={this.uiUxClick}>UI/UX</button>
+                        <div id="project-filter-button-wrapper">
+                            <button onClick={this.webDevClick} style={this.state.webDev ? {fontWeight: 600} : {fontWeight: 400}}>Web Development</button>
+                            <div></div>
+                            <button onClick={this.uiUxClick} style={this.state.uiUx ? {fontWeight: 600} : {fontWeight: 400}}>UI/UX</button>
                         </div>
                         <FilterProjects webDev={this.state.webDev} uiUx={this.state.uiUx}/>
                     </div>
