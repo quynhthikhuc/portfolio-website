@@ -6,18 +6,51 @@ class Contact extends React.Component{
     constructor(){
         super();
         this.state = {
+            name: '',
+            message: '',
+            email: '',
         }
         this.handleFormSubmiton = this.handleFormSubmiton.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.resetForm = this.resetForm.bind(this);
     }
 
     handleFormSubmiton(e){
         e.preventDefault();
         emailjs.sendForm('gmail', 'default-template', e.target, 'user_skfVaBybyYiZPKouXN1De')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+        .then((result) => {
+            alert('Message successfully sent!')
+        }, (error) => {
+            alert('An error occured, message cannot be sent. Please try again.');
+        });
+
+        this.resetForm();
+    }
+
+    handleChange(e){
+        if(e.target.id === 'name'){
+            this.setState({
+                name: e.target.value,
+            })
+        }
+        else if(e.target.id === 'email'){
+            this.setState({
+                email: e.target.value,
+            })
+        }
+        else{
+            this.setState({
+                message: e.target.value,
+            })
+        }
+    }
+
+    resetForm(){
+        this.setState({
+            name: '',
+            message: '',
+            email: '',
+        })
     }
 
     render(){
@@ -34,21 +67,20 @@ class Contact extends React.Component{
                                 <li><a href="https://www.linkedin.com/in/quinnkhuc/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                             </ul>
                         </div>
-                        <form onSubmit={e => this.handleFormSubmiton(e)}>
+                        <form id="contact-form" onSubmit={e => this.handleFormSubmiton(e)}>
                             <div>
                                 <label htmlFor="name">Name:</label>
-                                <input type="text" name="name" id="name" required/>
+                                <textarea name="name" id="name" value={this.state.name} onChange={e => this.handleChange(e)} required></textarea>
                             </div>
                             <div>
                                 <label htmlFor="email">Email:</label>
-                                <input type="text" name="email" id="email" required/>
+                                <textarea name="email" id="email" value={this.state.email} onChange={e => this.handleChange(e)} required></textarea>
                             </div>
                             <div>
                                 <label htmlFor="message">Message:</label>
-                                <input type="text" name="message" id="message" size="100" required/>
+                                <textarea name="message" id="message" size="100" value={this.state.message} onChange={e => this.handleChange(e)} required></textarea>
                             </div>
-                            <input type="submit" value="Submit" id="submit-button"
-                            />
+                            <input type="submit" value="Submit" id="submit-button"/>
                         </form>
                     </div>
                 </main>

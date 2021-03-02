@@ -6,7 +6,9 @@
     margin-top: 2rem;
 }
 
-#contact-main form input{
+#contact-main form textarea{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
     display: block;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
@@ -25,12 +27,11 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-top: 1.2rem;
-    width: 50%;
+    width: 10rem;
 }
 
-#contact-main form input:focus{
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
+#contact-main #submit-button:hover{
+    font-weight: 600;
 }
 
 @media(min-width: 768px){
