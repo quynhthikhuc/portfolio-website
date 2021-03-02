@@ -6,10 +6,12 @@ header{
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 80vw;
+    z-index: 100;
 }
 
 header a{
     text-decoration: none;
+    outline: none;
 }
 
 nav{
@@ -24,6 +26,10 @@ nav ul{
 
 nav ul li{
     list-style-type: none;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
 }
 
 #logo{

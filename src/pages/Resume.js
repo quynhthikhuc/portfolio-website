@@ -66,15 +66,15 @@ function Resume() {
                             <li className="list-items">
                                 <h3>Photography Portfolio Website</h3>
                                 <ul>
-                                    <li>Built a content managing system that allows admin to log in, log out, add new articles, edit existing articles, and delete articles</li>
-                                    <li>Utilized: HTML, CSS, PHP, MySQL, Git, GitHub</li>
+                                    <li>Build a content managing system that allows admin to log in, log out, add new articles, edit existing articles, and delete articles</li>
+                                    <li>Use: HTML, CSS, JavaScript, PHP, MySQL, Git, GitHub</li>
                                 </ul>
                             </li>
                             <li className="list-items">
                                 <h3>Genshin Zodiac</h3>
                                 <ul>
                                     <li>Created a responsive web application that let user to find out which Genshin Impact character they are based on their birthday</li>
-                                    <li>Used HTML, CSS, JavaScript (React), Git, GitHub</li>
+                                    <li>Utilized HTML, CSS, JavaScript (React), Git, GitHub</li>
                                 </ul>
                             </li>
                         </ul>

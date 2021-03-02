@@ -39,10 +39,12 @@ main{
 
 button{
     font-size: 1.2rem;
+    outline: none;
 }
 
 button:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 
 h1{
@@ -89,7 +91,7 @@ blockquote p{
 
 @media(min-width: 500px){
     body, button{
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
     li{
@@ -98,7 +100,7 @@ blockquote p{
     }
 
     p, li, h3{
-        line-height: 2.1rem;
+        line-height: 2rem;
     }
 
     h1{
@@ -115,7 +117,7 @@ blockquote p{
 
 @media (min-width: 900px){
     body, button{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     li{
@@ -124,7 +126,7 @@ blockquote p{
     }
 
     p, li, h3{
-        line-height: 2.5rem;
+        line-height: 2.25rem;
     }
 
     h1{

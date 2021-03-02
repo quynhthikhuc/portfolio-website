@@ -37,9 +37,9 @@ class Home extends React.Component{
                     <div id="my-work">
                         <h2>My work</h2>
                         <div id="project-filter-button-wrapper">
-                            <button onClick={this.webDevClick} style={this.state.webDev ? {fontWeight: 600} : {fontWeight: 400}}>Web Development</button>
+                            <button class="btn" onClick={this.webDevClick} style={this.state.webDev ? {fontWeight: 600} : {fontWeight: 400}}>Web Development</button>
                             <div></div>
-                            <button onClick={this.uiUxClick} style={this.state.uiUx ? {fontWeight: 600} : {fontWeight: 400}}>UI/UX</button>
+                            <button class="btn" onClick={this.uiUxClick} style={this.state.uiUx ? {fontWeight: 600} : {fontWeight: 400}}>UI/UX</button>
                         </div>
                         <FilterProjects webDev={this.state.webDev} uiUx={this.state.uiUx}/>
                     </div>
