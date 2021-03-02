@@ -181,6 +181,33 @@ function TheOrdinary() {
                         <p>
                             Finally, we’ve made to the end of this lengthy case study. Thank you for taking your time to reading it through. Now, let’s enjoy the the final design, and I’ll see you in my other projects.
                         </p>
+                        <figure>
+                            <img srcSet="images/the-ordinary/home-page-large.jpg  900w,
+                                    images/the-ordinary/home-page-medium.jpg  600w,
+                                    images/the-ordinary/home-page-small.jpg 350w"
+                                sizes="100vw"
+                                src="images/the-ordinary/home-page-small.jpg"
+                            alt="User Persona"/>
+                            <figcaption>High Fidelity Homepage Prototype</figcaption>
+                        </figure>
+                        <figure>
+                            <img srcSet="images/the-ordinary/catalog-page-large.jpg  900w,
+                                    images/the-ordinary/catalog-page-medium.jpg  600w,
+                                    images/the-ordinary/catalog-page-small.jpg 350w"
+                                sizes="100vw"
+                                src="images/the-ordinary/catalog-page-small.jpg"
+                            alt="User Persona"/>
+                            <figcaption>High Fidelity Catalog Page Prototype</figcaption>
+                        </figure>
+                        <figure>
+                            <img srcSet="images/the-ordinary/product-page-large.jpg  900w,
+                                    images/the-ordinary/product-page-medium.jpg  600w,
+                                    images/the-ordinary/product-page-small.jpg 350w"
+                                sizes="100vw"
+                                src="images/the-ordinary/product-page-small.jpg"
+                            alt="User Persona"/>
+                            <figcaption>High Fidelity Product Page Prototype</figcaption>
+                        </figure>
                     </div>
                 </div>
             </main>
