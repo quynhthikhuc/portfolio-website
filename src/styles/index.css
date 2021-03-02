@@ -28,6 +28,7 @@ body{
     font-size: 1.2rem;
     font-weight: 300;
     margin: 2.5rem auto;
+    outline: none;
     scroll-padding-top: 12%;
     width: 80%;
 }

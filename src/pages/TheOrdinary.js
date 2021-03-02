@@ -155,7 +155,7 @@ function TheOrdinary() {
     
                         <div>
                             <p>
-                                The font that I chose for my final design is Roboto, and the reason for this was that Roboto looked similar to the font used on the brand’s logo, as well as tt was also simple, unobtrusive, and easy on the eyes.
+                                The font that I chose for my final design is Roboto, and the reason for this was that Roboto looked similar to the font used on the brand’s logo, as well as it was also simple, unobtrusive, and easy on the eyes.
                             </p>
                             <figure>
                                 <img srcSet="images/the-ordinary/typography-large.jpg  900w,

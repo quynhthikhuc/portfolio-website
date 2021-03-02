@@ -48,10 +48,6 @@
 }
 
 @media (min-width: 900px){
-    .project-pages figure{
-        width: 90%
-    }
-
     .project-highlight{
         font-size: 2.3rem;
         line-height: 3rem;
