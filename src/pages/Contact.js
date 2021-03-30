@@ -62,7 +62,7 @@ class Contact extends React.Component{
                         <div id="contact-instruction">
                             <p>You can reach out to me by using the contact form, or through any of the following social media platform:</p>
                             <ul>
-                                <li><a href="https://github.com/quinnkhuc" target="_blank" rel="noreferrer">GitHub</a></li>
+                                <li><a href="https://github.com/quynhthikhuc" target="_blank" rel="noreferrer">GitHub</a></li>
                                 <li><a href="https://www.instagram.com/qtk05_/" target="_blank" rel="noreferrer">Instagram</a></li>
                                 <li><a href="https://www.linkedin.com/in/quinnkhuc/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                             </ul>
